@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-warning text-center pt-5 pb-5">
+    <h3>CMF - JSON to Excel Conversion Tool for IIS/ASMA Assessment Report</h3>
+</div>
+
+<form enctype="multipart/form-data" method="post">
+<div class="border border-4 border-primary p-3 my-auto mx-auto">
+    <div class="container py-4 px-3 mx-auto">
+        <h5 class="text-success">Please Choose Correct File for Conversion.....</h5>
+        <div class="mb-3">
+            <label for="formFile" class="form-label"></label>
+            <input class="form-control" type="file" name="formFile">
+        </div>
+        <div>
+                <button class="btn btn-primary">Convert/Download</button>
+                <button asp-controller="Home" asp-action="Clear" class="btn btn-info">Reset</button>
+        </div>       
+    </div>
+</div>
+</form>
+
